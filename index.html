@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PORME Inc. | 株式会社PORME</title>
+    <link rel="shortcut icon" href="img/porme_logo_symbol.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('a[href^="#"]').click(function() {
+          var speed = 400;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="side-bar" id="side">
+      <img src="img/porme_logo.png" class="porme-logo-sp">
+      <div class="menu-block">
+        <a href="#mission"><h4>mission</h4></a>
+        <a href="#value"><h4>value</h4></a>
+        <a href="#servise"><h4>servise</h4></a>
+        <a href="#member"><h4>member</h4></a>
+        <a href="#company"><h4>company</h4></a>
+        <a href="#contact"><h4>contact</h4></a>
+      </div>
+    </nav>
+    <header>
+      <img src="img/porme_logo.png" class="porme-logo">
+    </header>
+    <div class="main">
+      <div id="mission" class="erea">
+        <h3>Mission</h3>
+        <h5>個人が活躍し、それを支える居場所がある社会を</h5>
+      </div>
+      <div id="value" class="erea">
+        <h3>Value</h3>
+        <h5>競合は余暇。</h5>
+        <h5>元気があればいつでも青春。</h5>
+        <h5>ひとりで輝き、みんなで燃えろ。</h5>
+        <h5>「大切なもの」を忘れずに。</h5>
+        <h5>自分を作ってくれた人に感謝を。</h5>
+      </div>
+      <div id="servise" class="erea">
+        <h3>Servise</h3>
+        <p>・人材共有SaaS</p>
+      </div>
+      <div id="member" class="erea">
+        <h3>Members</h3>
+        <div clas="member-profile">
+          <div class="member-box">
+            <img src="img/kohei_obata.jpg" class="member-photo">
+            <P class="member-name">小畑浩平</P>
+            <p class="member-role">代表取締役CEO</p>
+          </div>
+          <div class="member-box">
+            <img src="img/ten_satomasa.jpg" class="member-photo">
+            <P class="member-name">里正天</P>
+            <p class="member-role">代表取締役COO</p>
+          </div>
+        </div>
+      </div>
+      <div id="company" class="erea">
+        <h3>Company</h3>
+        <table class="company-table">
+          <tr>
+            <th>会社名</th>
+            <td>株式会社PORME</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>〒153-0061<br />東京都目黒区2中目黒3-2-8</td>
+          </tr>
+          <tr>
+            <th>設立</th>
+            <td>平成29年11月9日</td>
+          </tr>
+          <tr>
+            <th>代表者名</th>
+            <td>代表取締役小畑浩平</td>
+          </tr>
+          <tr>
+            <th>事業内容</th>
+            <td>ウェブサービスの展開</td>
+          </tr>
+        </table>
+      </div>
+      <div id="contact" class="erea">
+        <h3>Contact</h3>
+        <a href="mailto:info@porme.business@gmail.com">porme.business@gmail.com</a>
+      </div>
+    </div>
+    <footer>
+      <p> &copy; 2019 PORME Inc. </p>
+    </footer>
+  </body>
+</html>
